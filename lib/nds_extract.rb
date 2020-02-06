@@ -23,7 +23,7 @@ def directors_totals(nds)
       second_index += 1
     end
     director_name = nds[first_index][:name]
-    result[director_name] = total_gross #adds the current director and their total gross.
+    result[director_name] = total_gross #adds the current director and their total gross to the result hash.
     first_index += 1
   end
   result
