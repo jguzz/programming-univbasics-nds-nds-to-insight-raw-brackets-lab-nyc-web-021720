@@ -17,7 +17,7 @@ def directors_totals(nds)
   while number_of_directors > first_index do
     #:name :movies
     while
-      number_of_movies =
+      number_of_movies = nds[first_index][:movies].length
 
 
     first_index += 1
