@@ -18,11 +18,11 @@ def directors_totals(nds)
     second_index = 0
     total_gross = 0
     while number_of_movies > second_index do
-      director_name = nds[first_index][:name]
-      total_gross = nds[first_index][:movies][second_index][:worldwide_gross]
-      "#{}"
+      #totals the current directors gross 
+      total_gross += nds[first_index][:movies][second_index][:worldwide_gross]
       second_index += 1
     end
+    director_name = nds[first_index][:name]
     first_index += 1
   end
 
