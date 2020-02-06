@@ -16,6 +16,7 @@ def directors_totals(nds)
     #:name :movies
     number_of_movies = nds[first_index][:movies].length
     second_index = 0
+    total_gross = 0
     while number_of_movies > second_index do
       director_name = nds[first_index][:name]
       worldwide_gross = nds[first_index][:movies][second_index][:worldwide_gross]
