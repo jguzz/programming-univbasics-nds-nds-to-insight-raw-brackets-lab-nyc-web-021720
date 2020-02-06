@@ -10,12 +10,12 @@ def directors_totals(nds)
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
   nds = directors_database
   result = { }
-  first_index = 0
+  first_index = 0 #Used to loop thru directors 
   number_of_directors = nds.length
   while number_of_directors > first_index do
     #:name :movies
     number_of_movies = nds[first_index][:movies].length
-    second_index = 0
+    second_index = 0 #used to loop thru directors movies
     total_gross = 0
     while number_of_movies > second_index do
       #totals the current directors gross
@@ -23,7 +23,7 @@ def directors_totals(nds)
       second_index += 1
     end
     director_name = nds[first_index][:name]
-    result[director_name] = total_gross
+    result[director_name] = total_gross #adds the current director and their total gross.
     first_index += 1
   end
   result
