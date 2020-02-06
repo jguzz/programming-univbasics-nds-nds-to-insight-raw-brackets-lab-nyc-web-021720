@@ -8,13 +8,13 @@ def directors_totals(nds)
   #
   #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
-  directors = directors_database
+  nds = directors_database
   result = { }
 
   first_index = 0
   second_index = 0
-  number_of_directors = nds.length
-  while nds.length > number_of_directors do
+  number_of_directors = nds.length 
+  while nds.length > first_index do
     #:name :movies
     while
     first_index += 1
