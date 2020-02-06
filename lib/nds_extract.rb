@@ -26,6 +26,5 @@ def directors_totals(nds)
     result.push([director_name] => total_gross)
     first_index += 1
   end
-
   result
 end
